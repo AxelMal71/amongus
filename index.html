@@ -1,8 +1,8 @@
 <html>
 <header>
 
-<link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
+<link rel="stylesheet" href="js/style.css">
+    <script src="js/UnityProgress.js"></script>
 	<script src="Game.json"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Game.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
